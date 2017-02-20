@@ -1,0 +1,40 @@
+{
+  "name": "gulp-markdown-toc",
+  "description": "Gulp plugin for markdown-toc. Generate a markdown table of contents for one or more markdown files, and an optional index for multiple files.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/gulp-markdown-toc",
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/gulp-markdown-toc",
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/gulp-markdown-toc/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "extend-shallow": "^2.0.1",
+    "markdown-toc": "^1.1.0",
+    "plugin-error": "^0.1.2",
+    "through2": "^2.0.3",
+    "vinyl": "^2.0.1"
+  },
+  "devDependencies": {
+    "delete": "^0.3.2",
+    "gulp": "^3.9.1",
+    "mocha": "^3.2.0"
+  },
+  "keywords": [
+    "gulp",
+    "gulpplugin",
+    "markdown",
+    "toc"
+  ]
+}
