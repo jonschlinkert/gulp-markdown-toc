@@ -25,7 +25,7 @@ module.exports = function(options) {
     try {
       var str = file.contents.toString();
       file.toc = toc(str, opts);
-      file.contents = new Buffer(toc.insert(str), opts);
+      file.contents = new Buffer(toc.insert(str, opts));
     } catch (err) {
       var errorOpts = {fileName: file.path, showStack: true};
       this.emit('error', new PluginError('gulp-markdown-toc', err, errorOpts));
