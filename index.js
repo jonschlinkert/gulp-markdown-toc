@@ -2,13 +2,12 @@
 
 var path = require('path');
 var File = require('vinyl');
-var extend = require('extend-shallow');
 var PluginError = require('plugin-error');
 var through = require('through2');
 var toc = require('markdown-toc');
 
 module.exports = function(options) {
-  var opts = extend({}, options);
+  var opts = Object.assign({}, options);
   var files = [];
 
   return through.obj(function(file, enc, next) {
@@ -93,7 +92,7 @@ function prefixPath(toc, relative) {
 }
 
 function prepareDest(file, dest, options) {
-  var opts = extend({cwd: process.cwd()}, options);
+  var opts = Object.assign({cwd: process.cwd()}, options);
   var cwd = path.resolve(opts.cwd);
 
   var destDir = typeof dest === 'function' ? dest(file) : dest;
