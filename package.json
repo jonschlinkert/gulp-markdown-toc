@@ -20,17 +20,16 @@
     "test": "mocha"
   },
   "dependencies": {
-    "extend-shallow": "^2.0.1",
     "markdown-toc": "^1.1.0",
     "plugin-error": "^0.1.2",
     "through2": "^2.0.3",
-    "vinyl": "^2.0.1"
+    "vinyl": "^2.1.0"
   },
   "devDependencies": {
-    "delete": "^0.3.2",
+    "delete": "^1.1.0",
     "gulp": "^3.9.1",
     "gulp-format-md": "^1.0.0",
-    "mocha": "^3.2.0"
+    "mocha": "^3.4.2"
   },
   "keywords": [
     "gulp",
